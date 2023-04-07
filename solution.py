@@ -1,11 +1,9 @@
 import pandas as pd
 import numpy as np
-
-
-chat_id = 123456 # Ваш chat ID, не меняйте название переменной
+from scipy.stats import norm
+from scipy.stats import chi2
+chat_id = 206038589 # Ваш chat ID, не меняйте название переменной
 
 def solution(x: np.array) -> float:
-    # Измените код этой функции
-    # Это будет вашим решением
-    # Не меняйте название функции и её аргументы
-    return x.mean() # Ваш ответ
+    a = 2*(x.mean() - 1)/44*44
+    return a # Ваш ответ
